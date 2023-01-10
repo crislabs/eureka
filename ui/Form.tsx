@@ -275,7 +275,7 @@ export const MarkdownPreview = ({ markdown }: { markdown: string }) => {
           const match = /language-(\w+)/.exec(className || '');
           return !inline && match ? (
             <SyntaxHighlighter
-              wrapLongLines={true}
+              // wrapLongLines={true}
               children={String(children).replace(/\n$/, '')}
               style={style as any}
               language={match[1]}
