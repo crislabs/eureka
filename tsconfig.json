@@ -18,6 +18,8 @@
     "paths": {
       "@/ui/*": ["ui/*"],
       "@/lib/*": ["lib/*"],
+      "@/src/*": ["src/*"],
+      "@/posts/*": ["posts/*"],
       "@/styles/*": ["styles/*"]
     },
     "plugins": [
