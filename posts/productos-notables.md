@@ -65,6 +65,27 @@ $$
 (a-b)^3=a^3-b^3-3ab(a-b)  
 $$
 
+- <mark>Trinomio al cubo:</mark>
+
+$$
+(a+b+c)^3=a^3+b^3+c^3+3a^2b+3a^2c+ 3ab^2+ 3b^2c+ 3ac^2+ 3bc^2+6abc   
+$$
+
+También
+
+$$
+(a+b+c)^3=a^3+b^3+c^3+3(a+b)(b+c)(a+c)  
+$$
+$$
+(a+b+c)^3=a^3+b^3+c^3+3(a+b+c)(ab+bc+ac)-3abc  
+$$
+$$
+(a+b+c)^3=a^3+b^3+c^3+3a^2(b+c)+3b^2(a+c)+3c^2(a+b)+6abc
+$$
+$$
+(a+b+c)^3=3(a+b+c)(a^2+ b^2+ c^2)-2(a^3+b^3+c^3)+6abc
+$$
+
 - <mark>Exponente de un cociente:</mark>
 
 $$

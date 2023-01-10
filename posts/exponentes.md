@@ -1,3 +1,11 @@
+---
+title: Functions for Beginners
+date: 'August 4, 2021'
+description: Learn how to create and use functions
+thumbnailUrl: '/javascript-functions-thumbnail.jpeg'
+tags: ['functions', 'javascript']
+---
+
 # Teoría de Exponentes
 
 
@@ -77,6 +85,12 @@ $$
 
 $$
 (\sqrt[n]{x})^m=\sqrt[n]{x^m}
+$$
+
+- <mark>Ecuaciones exponenciales</mark>
+
+$$
+a^m=a^n =>m =n
 $$
 
 

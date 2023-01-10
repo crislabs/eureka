@@ -145,35 +145,12 @@ $
 `;
 
 export function Form(props: Props) {
-  console.log('props.article', props.article)
+  // console.log('props.article', props.article)
   // console.log('article', article)
   // console.log('data', post)
   return (
     <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
-      <div className="w-full mx-auto space-y-4 text-center">
-        <p className="text-xs font-semibold tracking-wider uppercase">
-          #TailwindCSS
-        </p>
-        <h1 className="text-4xl font-bold leading-tight md:text-5xl">
-          {/* {post.dataArticle.seoArticle.title} */}
-        </h1>
-        <p className="text-sm dark:text-gray-400">
-          by
-          <a
-            rel="noopener noreferrer"
-            href="#"
-            target="_blank"
-            className="underline dark:text-violet-400"
-          >
-            <span>Leroy Jenkins</span>
-          </a>
-          on
-          <time>Feb 12th 2021</time>
-        </p>
-      </div>
-      {/* <div className="dark:text-gray-100">
-        <p>Insert the actual text content here...</p>
-      </div> */}
+      
       <div className="text-gray-800 prose max-w-none prose-pre:p-0 prose-pre:bg-inherit">
         <MarkdownPreview
           markdown={props.article || ''}
@@ -199,7 +176,7 @@ export function Form(props: Props) {
             </p>
           </div>
         </div>
-        <div className="flex justify-center pt-4 space-x-4 align-center">
+        {/* <div className="flex justify-center pt-4 space-x-4 align-center">
           <a
             rel="noopener noreferrer"
             href="#"
@@ -256,7 +233,7 @@ export function Form(props: Props) {
               <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
             </svg>
           </a>
-        </div>
+        </div> */}
       </div>
     </article>
   );
