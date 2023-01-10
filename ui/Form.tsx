@@ -242,6 +242,7 @@ export function Form(props: Props) {
 export const MarkdownPreview = ({ markdown }: { markdown: string }) => {
   return (
     <ReactMarkdown
+      unwrapDisallowed={true}
       // children={markdown}
       // remarkPlugins={[remarkMath, remarkGfm ]}
       // rehypePlugins={[rehypeKatex]}
