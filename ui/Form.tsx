@@ -11,6 +11,7 @@ import style from 'react-syntax-highlighter/dist/cjs/styles/prism/synthwave84';
 import rehypeStringify from 'rehype-stringify'
 import remarkRehype from 'remark-rehype'
 import remarkParse from 'remark-parse'
+import matter from 'gray-matter';
 // const article = import('posts/exponentes.mdx')
 
 interface Props {
@@ -18,6 +19,13 @@ interface Props {
 }
 
 const math = `
+---
+title: Functions for Beginners
+date: 'August 4, 2021'
+description: Learn how to create and use functions
+thumbnailUrl: '/javascript-functions-thumbnail.jpeg'
+tags: ['functions', 'javascript']
+---
 
 # Teoría de Exponentes
 
@@ -148,10 +156,14 @@ export function Form(props: Props) {
   // console.log('props.article', props.article)
   // console.log('article', article)
   // console.log('data', post)
+
+  const { data, content } = matter(math);
+  console.log('data', data)
+  console.log('content', content)
   return (
     <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
       
-      <div className="text-gray-800 prose max-w-none prose-pre:p-0 prose-pre:bg-inherit">
+      <div className="text-gray-800 prose max-w-none prose-pre:p-0 prose-pre:bg-inherit whitespace-normal">
         <MarkdownPreview
           markdown={props.article || ''}
         ></MarkdownPreview>
@@ -242,7 +254,7 @@ export function Form(props: Props) {
 export const MarkdownPreview = ({ markdown }: { markdown: string }) => {
   return (
     <ReactMarkdown
-      unwrapDisallowed={true}
+      unwrapDisallowed={false}
       // children={markdown}
       // remarkPlugins={[remarkMath, remarkGfm ]}
       // rehypePlugins={[rehypeKatex]}

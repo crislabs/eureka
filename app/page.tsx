@@ -6,13 +6,13 @@ import path from 'path'
 import { use } from "react";
 export default function Page() {
   const files = fs.readdirSync(path.join('posts'))
-  console.log('files', files)
+  // console.log('files', files)
   // const article = fs.readFileSync(
   //   path.join('posts', files[1]),
   //   'utf-8'
   // )
   const doc = getDocBySlug('exponentes');
-  // console.log('doc', doc)
+  console.log('doc', doc)
   // const content = use(markdownToHtml(doc.content || ''));
   // console.log('content', content)
   return (
