@@ -47,9 +47,9 @@
   .card-dashboard-input {
     @apply h-5 w-5 rounded border-gray-400 text-indigo-600 focus:ring-indigo-500 absolute  top-2 left-2 z-10 opacity-0 group-hover:opacity-100 transition ease-in-out delay-150;
   }
-  .katex-display>.katex {
+  /* .katex-display>.katex {
     @apply whitespace-normal	 !important;
-  }
+  } */
   /* .katex-display{
     @apply whitespace-normal	 !important;
   }

@@ -1,7 +1,7 @@
 import { SessionAuthProvider } from '@/src/providers/SessionContext';
 import '@/styles/globals.css';
-import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
-// import '@/styles/katex.css';
+// import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
+import '@/styles/katex.css';
 import { Header } from '@/ui/Header';
 import React from 'react';
 
